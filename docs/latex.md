@@ -100,7 +100,7 @@ Use the following conventions when you write in LaTex.
   * `tbl:` for tables (e.g., `tbl:stats`),
   * `fig:` for figures (e.g., `fig:diagram`).
 
-## Paragraph
+## Paragraphs
 
 * Put `\noindent` on any paragraph that
   * Starts at the top of the page,
