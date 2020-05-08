@@ -18,16 +18,3 @@ The objective of this page is to keep the consistent formatting in your writings
 * [Labels](doc/labels.md)
 * [Tables](doc/tables.md)
 * [Figures](doc/figures.md)
-
-
-
-
-
-
-
-<!-- ## Paragraphs
-
-* Put `\noindent` on any paragraph that
-  * Starts at the top of the page,
-  * Follows tables, figures, or algorithm boxes.
-* Avoid paragraphs ending with only few words; in other words, avoid any line including only few words. -->
