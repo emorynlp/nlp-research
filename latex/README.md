@@ -1,24 +1,18 @@
-LaTex Conventions
+LaTex Guidelines
 =====
 
-Use the following conventions when you write in LaTex.
+Most reputable journals and conference proceedings recommend LaTex to write research papers.
+The objective of these guidelines is to keep the consistent formatting in your writings, which gives the following benefits:
 
+* Readers will have easier time to follow your contents since they do not need to learn new formatting styles for different papers.
+* You will end up spending less time to write papers as you already know what formatting you should use to present your contents.
+* Your writings will look professional as the guidelines suggested here are the insights learned from numerous peer-reviewed publications.
 
-## Packages
+## Table of Contents
 
-* Include the followings before `\begin{document}`:
-  ```latex
-  \usepackage[hang,flushmargin]{footmisc}
-  \usepackage{microtype}
-  \usepackage{graphicx}
-  \usepackage{enumitem}
-  \setenumerate[1]{leftmargin=*}
-  \setitemize[1]{leftmargin=*}
-  ```
-  * `footmisc`: removes the indentation of footnotes.
-  * `graphics`: enables to include PDF images.
-  * `microtype`: adjusts margins between tokens (it makes the token alignment prettier).
-  * `enumitem`: enables `setenumerate` and `setitemize` to remove the indentation of the `enumerate` and `itemize` environments.
+* [Getting Started](doc/getting_started.md)
+* [Packages](doc/packages.md)
+
 
 
 ## Bib Entries
