@@ -2,7 +2,7 @@ LaTex Guidelines
 =====
 
 Most reputable journals and conference proceedings recommend LaTex to write research papers.
-The objective of this page is to keep the consistent formatting in your writings, which gives the following benefits:
+The objective of this page is to keep the consistent formatting in your writings, which has the following benefits:
 
 * Readers will have easier time to follow your contents since they do not need to be familiarized with new formatting styles.
 * You will spend less time writing since you already know what formatting you should use to present your contents.

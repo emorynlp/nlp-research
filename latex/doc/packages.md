@@ -3,7 +3,7 @@
 ## Required Packages
 
 Most LaTex templates come with their own style files.
-Our [template](https://www.overleaf.com/read/xqgmwyqbqxbz) uses the style file, `acl2020.sty`, that is indicated as the first package:
+Our [template](https://www.overleaf.com/read/xqgmwyqbqxbz) uses the style file, `acl2020.sty`, that is indicated as the first package in the main tex file, `acl2020.tex`:
 
 ```latex
 \usepackage[hyperref]{acl2020}
@@ -20,7 +20,7 @@ The following packages (and definition) are required by ACL:
 
 ## Recommended Packages
 
-Include the following packages (and definition) to the main tex file (e.g,. `acl2020.tex`):
+Include the following packages (and definition) to the main tex file:
 
 ```latex
 \usepackage{microtype}      % make text margins prettier
@@ -44,7 +44,7 @@ The following packages provide useful fonts:
 \usepackage{amsmath}
 ```
 
-Include the followings if you want no indentation for the enumerate/itemize environments:
+Include the followings if you do not want any indentation for the enumerate/itemize environments:
 
 ```latex
 \usepackage{enumitem}

@@ -8,10 +8,17 @@ This is the first sentence.
 This is the second sentence.
 ```
 
-Instead of writing as follows:
+instead of writing as follows:
 
 ```latex
 This is the first sentence. This is the second sentence.
+```
+
+which allows the following to comment out the second sentence:
+
+```latex
+This is the first sentence.
+% This is the second sentence.
 ```
 
 <!--
