@@ -2,7 +2,7 @@
 
 ## Tables in Column
 
-Use the following template for tables in column:
+Use the following template to include tables in column:
 
 ```latex
 \begin{table}[htbp!]
@@ -26,7 +26,6 @@ Use the following template for tables in column:
   \centering\small{ %\resizebox{\columnwidth}{!}{
   ```
 * If the table exceeds the column width, put the `tabular` inside a `\resizebox` instead:
-
   ```latex
   \centering\resizebox{\columnwidth}{!}{
   \begin{tabular}{c||c|c|c}
@@ -44,7 +43,7 @@ Use the following template for tables in column:
 
 ## Tables in Page
 
-Use the following template for tables that expand to the full page.
+Use the following template to include tables that expand to the full page.
 
 ```latex
 \begin{table*}[htbp!]
@@ -62,8 +61,8 @@ Use the following template for tables that expand to the full page.
 \end{table*}
 ```
 
-* See the explanations for the [Tables in Column](#Tables-in-Column).
 * If the table exceeds the page width, use `\textwidth` instead of `\columnwidth` for `\resizebox`.
+* See the other explanations for the [Tables in Column](#Tables-in-Column).
 
 
 ## Sub-Tables
@@ -85,7 +84,7 @@ Use the following template to create sub-tables.
 3 & A3 & B3 & C3 \\
 \end{tabular}}
 \caption{Sub-table 1.}
-\label{tab:subtable-1}
+\label{tab:name-1}
 \end{subtable}
 \vspace{0.5em}
 
@@ -100,7 +99,7 @@ Use the following template to create sub-tables.
 3 & A3 & B3 & C3 \\
 \end{tabular}}
 \caption{Sub-table 2.}
-\label{tab:subtable-2}
+\label{tab:name-2}
 \end{subtable}
 
 \caption{Description.}

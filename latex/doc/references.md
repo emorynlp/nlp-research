@@ -14,7 +14,7 @@ Our [template](https://www.overleaf.com/read/xqgmwyqbqxbz) uses the style file, 
 Create a bib file to add references used in your paper.
 Our [template](https://www.overleaf.com/read/xqgmwyqbqxbz) uses bib file, `acl2020.bib`, that is indicated towards the bottom of main tex file, `acl2020.tex`:
 
-```
+```latex
 \bibliography{acl2020}
 ```
 
