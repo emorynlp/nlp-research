@@ -38,6 +38,11 @@ Use the following template to include tables in column:
   \begin{tabular}{c||c|c|c} 
   \bf A & \bf B & \bf C & \bf D \\
   ```
+* Make sure values in the header row are always center aligned regardless of the configuration.  You can specify this by using `\multicolumn`:
+  ```latex
+  \begin{tabular}{c||r|r|r} 
+  \bf A & \multicolumn{1}{c|}{\bf B} & \multicolumn{1}{c|}{\bf C} & \multicolumn{1}{c}{\bf D} \\
+  ```
 * Make sure the label starts with the prefix `tab:`.
 
 
