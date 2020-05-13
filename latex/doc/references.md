@@ -40,6 +40,12 @@ Keep the following conventions to add entries in the bib file:
   ```
   Booktitle = {Proceedings of ACL},
   ```
+  Also, do not append the acronym in parentheses at the end of the venue name.
+  For instance, remove `(ACL)` from the following::
+  ```
+  Booktitle = {Proceedings of the Annual Conference of the Association for Computational Linguistics (ACL)},
+  ```
+  Use the `series` field instead to indicate the acronym.
 * For `series`, use the format `acronym'year` (e.g., `ACL'20`), where `acronym` is the acronym of the venue and `year` is the last two digits of the published year.
 * For `pages`, put two dashes between the first and the last pages (e.g., `1--10`).
 * For `url`, add the link to the original source of the paper (e.g., [ACL Anthology](https://www.aclweb.org/anthology/)).
