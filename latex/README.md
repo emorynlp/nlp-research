@@ -18,3 +18,4 @@ The objective of this page is to keep the consistent formatting in your writings
 * [Labels](doc/labels.md)
 * [Tables](doc/tables.md)
 * [Figures](doc/figures.md)
+* [Lists](doc/lists.md)
