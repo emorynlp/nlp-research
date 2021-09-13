@@ -1,6 +1,6 @@
-# ACL 2019: Dialog and Interactive Systems
+# EMNLP 2019: Dialog and Interactive Systems
 
-https://acl2019.org/EN/program.xhtml.html
+https://2019.emnlp.org/program/schedule/
 
 
 ## Title of Paper 1

@@ -1,6 +1,6 @@
-# ACL 2019: Dialog and Interactive Systems
+# NAACL 2021: Dialog and Interactive Systems
 
-https://acl2019.org/EN/program.xhtml.html
+https://2021.naacl.org/conference-program/main/program.html
 
 
 ## Title of Paper 1
