@@ -2,9 +2,9 @@
 
 ## Tasks
 
-* List all papers under the "Dialog and Interactive Systems" (or similar) sessions from each conference.
-* Fill the followings:
-  * **Task**: the main task(s) (e.g., open-chat dialogue, multi-domain task-oriented dialogue)
+* List all papers under the "Dialog and Interactive Systems" (or similar) sessions for each conference (with links).
+* Fill the following fields:
+  * **Task**: the main tasks (e.g., open-chat dialogue, multi-domain task-oriented dialogue)
   * **Data**: data used for experiments (e.g., MultiWOZ, Amazon TopicalChat)
   * **Approach**: key approaches (e.g., reinforcement learning, attention-based seq2seq) 
   * **Evaluation**: evaluation metrics (e.g., BLEU score, MTurk)
