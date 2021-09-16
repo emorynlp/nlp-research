@@ -243,37 +243,59 @@ Metrics: MAP, MRR, P@1, R@N
 
 ### Task
 
-To be filled.
+The paper introduces the PhotoBook dataset, a large-scale collection of visually-grounded, task-oriented dialogues in English designed to investigate shared dialogue history accumulating during conversation. They propose a data-collection task formulated as a collaborative game prompting two online participants to refer to images utilising both their visual context as well as previously established referring expressions.
+
+In the PhotoBook task, two participants are paired for an online multi-round image identification game. In this game, participants are shown collections of images that resemble the page of a photo book. Each of these collections is a randomly ordered grid of six similar images depicting everyday scenes extracted from the MS COCO Dataset. On each page of the photo book, some of the images are present in the displays of both participants (the common images). The other images are each shown to one of the participants only (different). Three of the images in each display are highlighted through a yellow bar under the picture. The participants are tasked to mark these highlighted target images as either common or different by chatting with their partner. The Photo Book task is symmetric, i.e., participants do not have predefined roles such as instruction giver and follower, or questioner and answerer. Consequently, both participants can freely and naturally contribute to the conversation, leading to more natural dialogues.
+
+Once the two participants have made their selections on a given page, they are shown a feed- back screen and continue to the next round of the game, a new page of the photo book displaying a different grid of images. Some of the images in this grid will be new to the game while others will have appeared before. A full game consists of la- belling three highlighted target images in each of five consecutive rounds.
+
+Each highlighted image is displayed exactly five times throughout a game while the display of im- ages and the order of rounds is randomised to pre- vent participants from detecting any patterns.
+
+The task setup requires each game of five rounds to display 12 unique but similar images to elicit non-trivial referring expressions. We use the object category annotations in MS COCO to group all landscape, unmarked, colour images where the two largest objects belong to the same category across all images in the set.
 
 ### Data
 
-To be filled.
+The resulting PhotoBook dataset contains a total of 164,615 utterances, 130,322 actions and spans a vocabulary of 11,805 unique tokens. 
+
+Dataset: https://dmg-photobook.github.io
 
 ### Approach
 
-To be filled.
+Data analysis
+
+Referenc Chain Extraction
+
+Resolution Model: LSTM to encode linguistic features of the dialogue segment. History condition encoding is shown in the diagram.
+
+![Screen Shot 2021-09-16 at 12 12 35 PM](https://user-images.githubusercontent.com/15247433/133647667-36d5a841-7dfd-4405-ac75-3c5fc121bb9c.png)
 
 ### Evaluation
 
-To be filled.
+Metrics: Precision, Recall, F1
 
+![Screen Shot 2021-09-16 at 12 14 06 PM](https://user-images.githubusercontent.com/15247433/133647910-270fa2f6-7bad-4663-93ef-d7ffb31370c1.png)
 
 ## [What Should I Ask? Using Conversationally Informative Rewards for Goal-Oriented Visual Dialogue](https://arxiv.org/pdf/1907.12021.pdf)
 
 ### Task
 
-To be filled.
+The paper proposes an end-to-end goal-oriented visual dialogue system, that combines reinforcement learning with regularized information gain to automatically generate a series of questions about an image with a single objective, with consideration of the contextual information in the image.
 
 ### Data
 
-To be filled.
+GuessWhat?!: https://github.com/GuessWhatGame/guesswhat
 
 ### Approach
 
-To be filled.
+Key components:
+1. Sampling Questions with Information Gain
+2. Regularized Information Gain
+3. Policy Gradients
+
+![Screen Shot 2021-09-16 at 12 26 28 PM](https://user-images.githubusercontent.com/15247433/133649700-618a0fd1-672a-4793-9824-f84509561cba.png)
 
 ### Evaluation
 
-To be filled.
+Metric: recognition accuracy
 
-
+![Screen Shot 2021-09-16 at 12 27 52 PM](https://user-images.githubusercontent.com/15247433/133649889-2ff6089f-a0d1-4ea1-8f1c-56b41dae49ca.png)
