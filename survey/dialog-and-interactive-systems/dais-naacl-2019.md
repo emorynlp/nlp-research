@@ -254,7 +254,7 @@ Intent accuracy and slot F1, evaluated using various cross-lingual strategies, s
 
 ### Task
 
-To be filled.
+Novel dialogue evaluation metric for coherence.
 
 ### Data
 
