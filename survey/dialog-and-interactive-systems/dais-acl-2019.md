@@ -32,7 +32,7 @@ Metric: ranking metric hits@X/Y, the fraction of time that the correct candidate
 
 ![Screen Shot 2021-09-16 at 9 35 07 AM](https://user-images.githubusercontent.com/15247433/133621779-129d4de3-17da-4f21-b5c1-3430bd169fe7.png)
 
-## [Generating Responses with a Specific Emotion in Dialog]()
+## [Generating Responses with a Specific Emotion in Dialog](https://aclanthology.org/P19-1359.pdf)
 
 ### Task
 
@@ -82,7 +82,7 @@ Metrics:
 [Screen Shot 2021-09-16 at 9 50 58 AM](https://user-images.githubusercontent.com/15247433/133624333-9c2b8fe9-56c9-4f64-95e3-0bdf2acf88bb.png)
 
 
-## [Semantically Conditioned Dialog Response Generation via Hierarchical Disentangled Self-Attention]()
+## [Semantically Conditioned Dialog Response Generation via Hierarchical Disentangled Self-Attention](https://arxiv.org/pdf/1905.12866.pdf)
 
 ### Task
 
@@ -114,7 +114,7 @@ Metric: BLEU, Entiry F1(entit coverage accuracy)
 
 ![Screen Shot 2021-09-16 at 10 30 18 AM](https://user-images.githubusercontent.com/15247433/133630764-4899028b-ec02-4c1a-950c-cfa740891cb2.png)
 
-## [OpenDialKG: Explainable Conversational Reasoning with Attention-based Walks over Knowledge Graphs]()
+## [OpenDialKG: Explainable Conversational Reasoning with Attention-based Walks over Knowledge Graphs](https://aclanthology.org/P19-1081.pdf)
 
 ### Task
 
@@ -136,7 +136,7 @@ Metric: recall@N
 
 ![Screen Shot 2021-09-16 at 10 36 50 AM](https://user-images.githubusercontent.com/15247433/133631907-db954e0d-0730-42fc-9d45-f91cf7d6b88d.png)
 
-## [Incremental Learning from Scratch for Task-Oriented Dialogue Systems]()
+## [Incremental Learning from Scratch for Task-Oriented Dialogue Systems](https://arxiv.org/pdf/1906.04991.pdf)
 
 ### Task
 
@@ -162,7 +162,7 @@ Metric: Average turn accuracy
 
 ![Screen Shot 2021-09-16 at 10 57 15 AM](https://user-images.githubusercontent.com/15247433/133635433-b1bbba63-b350-4e3c-ae5e-e6f70962d95a.png)
 
-## [ReCoSa: Detecting the Relevant Contexts with Self-Attention for Multi-turn Dialogue Generation]()
+## [ReCoSa: Detecting the Relevant Contexts with Self-Attention for Multi-turn Dialogue Generation](https://arxiv.org/pdf/1907.05339.pdf)
 
 ### Task
 
@@ -188,7 +188,7 @@ Human judgement: win, loss, tie
 
 ![Screen Shot 2021-09-16 at 11 09 23 AM](https://user-images.githubusercontent.com/15247433/133637591-065197c2-d088-4358-a870-e7dc6b508086.png)
 
-## [Transferable Multi-Domain State Generator for Task-Oriented Dialogue Systems]()
+## [Transferable Multi-Domain State Generator for Task-Oriented Dialogue Systems](https://arxiv.org/pdf/1905.08743.pdf)
 
 ### Task
 
@@ -210,7 +210,7 @@ Metric: joint goal accuracy, slot accuracy
 
 ![Screen Shot 2021-09-16 at 11 17 15 AM](https://user-images.githubusercontent.com/15247433/133638903-b5f060f9-8adc-4e2e-95cd-54ba0fdf8529.png)
 
-## [Learning a Matching Model with Co-teaching for Multi-turn Response Selection in Retrieval-based Dialogue Systems]()
+## [Learning a Matching Model with Co-teaching for Multi-turn Response Selection in Retrieval-based Dialogue Systems](https://arxiv.org/pdf/1906.04413.pdf)
 
 ### Task
 
@@ -239,7 +239,7 @@ Metrics: MAP, MRR, P@1, R@N
 
 ![Screen Shot 2021-09-16 at 11 44 03 AM](https://user-images.githubusercontent.com/15247433/133643247-46251ec3-58e7-4866-b624-0210e5ebb223.png)
 
-## [The PhotoBook Dataset:Building Common Ground through Visually-Grounded Dialogue]()
+## [The PhotoBook Dataset:Building Common Ground through Visually-Grounded Dialogue](https://arxiv.org/pdf/1906.01530.pdf)
 
 ### Task
 
@@ -258,7 +258,7 @@ To be filled.
 To be filled.
 
 
-## [Title of Paper 10]()
+## [What Should I Ask? Using Conversationally Informative Rewards for Goal-Oriented Visual Dialogue](https://arxiv.org/pdf/1907.12021.pdf)
 
 ### Task
 
