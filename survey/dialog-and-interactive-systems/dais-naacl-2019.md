@@ -60,7 +60,7 @@ Based on human-annotated scene graph of an image, generate dialogue examples usi
 Multi-class accuracy (system responses are generally expected to be one-word answers to specific questions).
 
 
-## [Title of Paper 4]()
+## [Box of Lies: Multimodal Deception Detection in Dialogues](https://aclanthology.org/N19-1175.pdf)
 
 ### Task
 
@@ -98,8 +98,7 @@ VAE setup with LSTM encoder and decoders, learning latent space representing dis
 Likelihood of test set reconstruction. Also ad hoc human checking of transition structure.
 
 
-## [Linguistically-Informed Specificity and Semantic Plausibility
-for Dialogue Generation](https://aclanthology.org/N19-1349.pdf)
+## [Linguistically-Informed Specificity and Semantic Plausibility for Dialogue Generation](https://aclanthology.org/N19-1349.pdf)
 
 ### Task
 
