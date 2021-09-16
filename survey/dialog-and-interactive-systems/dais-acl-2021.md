@@ -102,221 +102,271 @@ Static binary evaluation on sensibility of response, appropriateness of API call
 
 ### Task
 
-To be filled.
+Negotiation task-oriented dialogues
 
 ### Data
 
-To be filled.
+CraigslistBargain
 
 ### Approach
 
-To be filled.
+Multi-agent Markov Decision Process with user reaction lookahead and explicit user personality estimation, trained first under supervised learning and then finetuned using reinforcement learning using actor-critic methods
 
 ### Evaluation
 
 #### Automated
 
-#### Human
+Agreement rate, Objective utility, Deal fairness, Dialog length
 
 ## [Learning from Perturbations: Diverse and Informative Dialogue Generation with Inverse Adversarial Training](https://aclanthology.org/2021.acl-long.57/)
 
 ### Task
 
-To be filled.
+Open-domain response generation
 
 ### Data
 
-To be filled.
+OpenSubtitles, Daily Dialog
 
 ### Approach
 
-To be filled.
+seq2seq models with adversarial training where the model is rewarded for changing the generated response given a dialogue history perturbation and punished otherwise
 
 ### Evaluation
 
 #### Automated
 
+Perplexity, Distinct-1/2/3, stopword percentage
+
 #### Human
+
+Interactive numeric evaluation of fluency, consistency, and diversity
 
 ## [Increasing Faithfulness in Knowledge-Grounded Dialogue with Controllable Features](https://aclanthology.org/2021.acl-long.58/)
 
 ### Task
 
-To be filled.
+Knowledge-grounded response generation
 
 ### Data
 
-To be filled.
+WoW
 
 ### Approach
 
-To be filled.
+seq2seq response generation model that incorporates control codes to allow for controlled variations in responses along the dimensions of objectivity and truthfulness.
 
 ### Evaluation
 
 #### Automated
 
+BLEU, Lexical precision/recall, Objectivity, Entailment ratio 
+
 #### Human
+
+Static numeric evaluation of fluency, relevance, supported/faithfulness, and objectivity
 
 ## [Saying No is An Art: Contextualized Fallback Responses for Unanswerable Dialogue Queries](https://aclanthology.org/2021.acl-short.13/)
 
 ### Task
 
-To be filled.
+Open-domain response generation
 
 ### Data
 
-To be filled.
+newly created "I Dont Know Dataset"
 
 ### Approach
 
-To be filled.
+pretrained seq2seq model finetuned to produce less generic fallback responses (e.g. "i dont know") by training on a dataset of (query, don't-know-response) pairs that is generated using handcrafted dependency templates and paraphrasing of the queries
 
 ### Evaluation
 
 #### Automated
 
+Coverage, Average Sentene Length, Sentence Length Variance, Average # Novel Words
+
 #### Human
+
+Static numeric evaluation of grammaticality and relevance
 
 ## [N-Best ASR Transformer: Enhancing SLU Performance using Multiple ASR Hypotheses](https://aclanthology.org/2021.acl-short.14/)
 
 ### Task
 
-To be filled.
+Task-oriented NLU (semantic parsing into act-slot-value triplets)
 
 ### Data
 
-To be filled.
+DSTC2
 
 ### Approach
 
-To be filled.
+pretrained transformer encoder model with a semantic tuple classifier finetuned on data of the form (concatenated N-best ASR results, act-slot-value triplets) 
 
 ### Evaluation
 
 #### Automated
 
-#### Human
+F1-score, Accuracy
 
 ## [I like fish, especially dolphins: Addressing Contradictions in Dialogue Modeling](https://aclanthology.org/2021.acl-long.134/)
 
 ### Task
 
-To be filled.
+Dialogue contradiction detection
 
 ### Data
 
-To be filled.
+newly created dataset of human-human dialogues and human-bot dialogues containing contradictions
+
+SNLI, MNLI, ANLI-R3, DNLI
 
 ### Approach
 
-To be filled.
+Transformer-based neural classification model where contradiction is taken as the max over all predictions on pairs of utterances from the same speaker
 
 ### Evaluation
 
 #### Automated
 
-#### Human
+Accuracy, F1, Exact Match
 
 ## [Discovering Dialog Structure Graph for Coherent Dialog Generation](https://aclanthology.org/2021.acl-long.136/)
 
 ### Task
 
-To be filled.
+Open-domain response generation
 
 ### Data
 
-To be filled.
+Weibo, Douban
 
 ### Approach
 
-To be filled.
+Unsupervised dialog structure graph induction using a discrete variational autoencoder with a graph neural network, which is then used as external knowledge in a reinforcement learning generative dialogue model
 
 ### Evaluation
 
 #### Automated
 
+Evaluation of induced graph reconstructions:
+
+NLL, BLEU-1/2
+
+Evaluation of dialogs:
+
+dialog length, Distinct-1/2
+
 #### Human
+
+Evaluation of induced graph:
+
+Ratings of Sess-Utter Appropriateness, Utter-Utter Appropriateness, Session-level Vertex Quality 
+
+Static evaluation of human-bot dialogs:
+
+Multi-turn coherence, Single-turn coherence, engagement
 
 ## [Dialogue Response Selection with Hierarchical Curriculum Learning](https://aclanthology.org/2021.acl-long.137/)
 
 ### Task
 
-To be filled.
+Response matching (e.g. identify correct response from set of candidates)
 
 ### Data
 
-To be filled.
+Douban, Ubuntu, E-Commerce
 
 ### Approach
 
-To be filled.
+Hierarchical curriculum learning paradigm where the dual-encoder matching model is trained with positive examples increasing from easiest to hardest and the same for negative candidates 
 
 ### Evaluation
 
 #### Automated
 
-#### Human
+Douban: MAP, MRR, P@1, R\_10@1, R\_10@2, R\_10@5
+
+Ubuntu: R\_2@1, R\_10@1, r\_10@2, R\_10@5
+
+E-Commerce: R\_10@1, R\_10@2, R\_10@5
 
 ## [PRAL: A Tailored Pre-Training Model for Task-Oriented Dialog Generation](https://aclanthology.org/2021.acl-short.40/)
 
 ### Task
 
-To be filled.
+Task-oriented dialog
 
 ### Data
 
-To be filled.
+newly created PretrainDial 
+
+CamRest676, MultiWOZ, PersuasionForGood
 
 ### Approach
 
-To be filled.
+Improved pretraining strategy for ARDM-based (separate language model for user and for system) dialog generation models by using start position randomization, Teacher model, and history discount
 
 ### Evaluation
 
 #### Automated
 
+CamRest676: BLEU-4, Success F1
+
+MultiWOZ: BLEU-4, Inform, Success
+
+PersuasionForGood: Perplexity, BLEU-1/2
+
 #### Human
+
+PersuasionForGood: Interactive numeric evaluation of fluency, logic, coherence, diversity, overall, avg donation
 
 ## [Robustness Testing of Language Understanding in Task-Oriented Dialog](https://aclanthology.org/2021.acl-long.192/)
 
 ### Task
 
-To be filled.
+Analysis of task-oriented dialog models
 
 ### Data
 
-To be filled.
+Frames, MultiWOZ
 
 ### Approach
 
-To be filled.
+Model-agnostic toolkit LAUG for testing robustness of task-oriented dialog models across various forms of input perturbation, including word perturbation, text paraphrasing, simulated speech recognition, and inserted speech disfluencies
 
 ### Evaluation
 
 #### Automated
 
+Perturbed inputs: Change rate of characters, words, and slot values
+
+Robustness measures: F1
+
 #### Human
+
+Perturbed inputs: Utterance appropriateness, dialog act appropriateness
 
 ## [OTTers: One-turn Topic Transitions for Open-Domain Dialogue](https://aclanthology.org/2021.acl-long.194/)
 
 ### Task
 
-To be filled.
+Topic Transition Generation
 
 ### Data
 
-To be filled.
+newly created OTTers of one-turn topic transitions with bridging utterance and entity path
 
 ### Approach
 
-To be filled.
+Finetune transformer-based language generation model with multi-hop reasoning on OTTers
 
 ### Evaluation
 
 #### Automated
 
-#### Human
+hits@k, ROUGE-L, METEOR, CIDEr
 
 ## [Towards Emotional Support Dialog Systems](https://aclanthology.org/2021.acl-long.269/)
 
