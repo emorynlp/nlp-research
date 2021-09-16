@@ -3,8 +3,7 @@
 https://naacl2019.org/schedule/
 
 
-## [Joint Multiple Intent Detection and Slot Labeling for
-Goal-Oriented Dialog](https://aclanthology.org/N19-1055.pdf)
+## [Joint Multiple Intent Detection and Slot Labeling for Goal-Oriented Dialog](https://aclanthology.org/N19-1055.pdf)
 
 ### Task
 
@@ -195,8 +194,7 @@ Hierarchical BiLSTM with self attention.
 Accuracy (both static and "online" (streaming) evaluation).
 
 
-## [What do Entity-Centric Models Learn? Insights from Entity Linking in
-Multi-Party Dialogue](https://aclanthology.org/N19-1378.pdf)
+## [What do Entity-Centric Models Learn? Insights from Entity Linking in Multi-Party Dialogue](https://aclanthology.org/N19-1378.pdf)
 
 ### Task
 
