@@ -327,25 +327,6 @@ Train BLSTM encoding classifier on in-domain data and unlabeld OOD data.
 Accuracy and F1.
 
 
-## []()
-
-### Task
-
-To be filled.
-
-### Data
-
-To be filled.
-
-### Approach
-
-To be filled.
-
-### Evaluation
-
-To be filled.
-
-
 ## [Leveraging Slot Descriptions for Zero-Shot Cross-Domain Dialogue State Tracking](https://aclanthology.org/2021.naacl-main.448.pdf)
 
 ### Task
