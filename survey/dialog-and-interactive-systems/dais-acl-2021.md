@@ -950,98 +950,109 @@ Static numeric evaluation of informativeness, grammar
 
 ### Task
 
-To be filled.
+Task-oriented dialog
 
 ### Data
 
-To be filled.
+MultiWOZ 2.0, CamRest676, SMCalFlow
 
 ### Approach
 
-To be filled.
+Transformer-based seq2seq model that uses a noisy channel model for target decoding where it is decomposed into a channel model (source given target) and language model (unconditioned target) according to Bayes Theorem. It evaluates two versions of the noisy channel model, where each uses a different decoding approximation scheme: nosiy channel reranking and noisy channel online decoding.
 
 ### Evaluation
 
 #### Automated
 
-#### Human
+MultiWOZ 2.0, CamRest676: Inform, Success, BLEU
+
+SMCalFlow: SacreBLEU, TER
 
 ## [The R-U-A-Robot Dataset: Helping Avoid Chatbot Deception by Detecting User Questions About Human or Non-Human Identity](https://aclanthology.org/2021.acl-long.544/)
 
 ### Task
 
-To be filled.
+Human-computer interaction
 
 ### Data
 
-To be filled.
+Built using PersonaChat, Persuasion For Good, Reddit Small
 
 ### Approach
 
-To be filled.
+This work seeks to explore the phenomenon of automated dialogue agent transparency in the context of human perception of the system. They create a dataset of "are you a robot"-like questions using handcrafted rules and crowdsourcing, including negative examples that are hard to discriminate from the positive examples based on tf-idf scores. They evaluate various classifier models on this task of identifying "are you a robot" questions. They investigate how current systems (Blender, Alexa, Google) handle these questions, and then conduct a user survey on how best to handle these questions with 4 hypothesized good response categories.
 
 ### Evaluation
 
 #### Automated
 
+Classifier: Precision, Recall, Accuracy
+
 #### Human
+
+User survey: Rating scale of Appropriateness, Trustworthiness, Friendliness
 
 ## [Conversation Graph: Data Augmentation, Training, and Evaluation for Non-Deterministic Dialogue Management](https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00352/97777/Conversation-Graph-Data-Augmentation-Training-and)
 
 ### Task
 
-To be filled.
+Task-oriented dialogue
 
 ### Data
 
-To be filled.
+M2M:movie, M2M: restaurant, and MultiWOZ 2.1
 
 ### Approach
 
-To be filled.
+Utilize a Conversation Graph (nodes = observed dialogue states, edges = observed dialogue act transitions between dialogue states) to allow for a non-deterministic action space for each dialogue state by unifying cross-conversation representations. This Conversation Graph is then used for data augmentation, across various strategies, and a multi-reference objective for policy training.
 
 ### Evaluation
 
 #### Automated
 
-#### Human
+Success, Dialogue Length, F1, SoftF1
 
 ## [Space Efficient Context Encoding for Non-Task-Oriented Dialogue Generation with Graph Attention Transformer](https://aclanthology.org/2021.acl-long.546/)
 
 ### Task
 
-To be filled.
+Knowledge-grounded response generation
 
 ### Data
 
-To be filled.
+KOMODIS, OpenDialKG
 
 ### Approach
 
-To be filled.
+Transformer-based hierarchical encoder-decoder where a knowledge subgraph is first concisely encoded before being fed into another encoder along with the dialogue context. The subgraph encoder adds entities to the input embedding word layer and relations to the input embedding segments layer, and uses an attention mask such that entity and relation tokens can only attend to tokens from their neighboring nodes.
 
 ### Evaluation
 
-#### Automated
-
 #### Human
+
+Static evaluation of entailment & contradiction per utterance and Likert ratings of naturalness, consistency, interestingness, & overall quality per dialogue
+
+
 
 ## [DialogueCRN: Contextual Reasoning Networks for Emotion Recognition in Conversations](https://aclanthology.org/2021.acl-long.547/)
 
 ### Task
 
-To be filled.
+Emotion recognition in conversations
 
 ### Data
 
-To be filled.
+IEMOCAP, SEMAINE, MELD
 
 ### Approach
 
-To be filled.
+LSTM-based multi-stage model with attention for utilizing dialogue-level and speaker-level utterance contexts to predict emotion of a given utterance  
+
 
 ### Evaluation
 
 #### Automated
 
-#### Human
+IEMOCAP, MELD: accuracy, weighted-F1, macro-F1
+
+SEMAINE: MAE
