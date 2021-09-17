@@ -121,7 +121,7 @@ Perplexity, Self-BLEU (diversity metric), human judgements of coherence, and rew
 
 ### Task
 
-To be filled.
+Task-oriented dialogue.
 
 ### Data
 
@@ -193,25 +193,6 @@ Inverse reinforcement learning of multi-level reward function to reward partiall
 Success rate, average turns to complete.
 
 
-## []()
-
-### Task
-
-To be filled.
-
-### Data
-
-To be filled.
-
-### Approach
-
-To be filled.
-
-### Evaluation
-
-To be filled.
-
-
 ## [Action-Based Conversations Dataset: A Corpus for Building More In-Depth Task-Oriented Dialogue Systems](https://aclanthology.org/2021.naacl-main.239.pdf)
 
 ### Task
@@ -274,19 +255,76 @@ MRR, R@K, NDCG.
 
 ### Task
 
-To be filled.
+Joint prediction of coreference links and query rewrites (for ellipsis resolution) within question-answering dialogue.
 
 ### Data
 
-To be filled.
+MuDoCo.
 
 ### Approach
 
-To be filled.
+Joint prediction of coreference and ellipsis resolutions using GPT2.
 
 ### Evaluation
 
-To be filled.
+For ellipses resolution: BLEU-4, precision, recall, F1, and whether coreferences were generated correctly within rewrites (comparing machine-generated tokens in the resolved-ellipsis-segment with that in the annotated resolved-ellipsis-segment). For coreference resolution: MUC, B^3, and CEAF.
+
+
+## [Knowledge-Driven Slot Constraints for Goal-Oriented Dialogue Systems](https://aclanthology.org/2021.naacl-main.266.pdf)
+
+### Task
+
+Constraint violation detection of slot-filling in task-orinted dialogue.
+
+### Data
+
+MultiDoGO, extended with slot constraints.
+
+### Approach
+
+Deterministic and probabilistic constraint-checking approaches to detect violations in the NLU output of a intent classifier + slot filler model. Also tried a BERT classifier to do neural violation classification. 
+
+### Evaluation
+
+Precision, recall, F1, turn intersection-over-union (IoU) of violations.
+
+
+## [Augmenting Knowledge-grounded Conversations with Sequential Knowledge Transition](https://aclanthology.org/2021.naacl-main.446.pdf)
+
+### Task
+
+Knowledge grounded chat-oriented dialogue.
+
+### Data
+
+Wizards of Wikipedia, DuConv corpus.
+
+### Approach
+
+Transformer attention between context and knowledge source.
+
+### Evaluation
+
+BLEU-1&2, Dist-1&2, human judgements of relevance, informativeness, and naturalness, also accuracy and F1 of shared knowledge.
+
+
+## [Adversarial Self-Supervised Learning for Out-of-Domain Detection](https://aclanthology.org/2021.naacl-main.447.pdf)
+
+### Task
+
+Out of domain turn classification for task-oriented dialogue.
+
+### Data
+
+CLINIC.
+
+### Approach
+
+Train BLSTM encoding classifier on in-domain data and unlabeld OOD data.
+
+### Evaluation
+
+Accuracy and F1.
 
 
 ## []()
@@ -308,118 +346,42 @@ To be filled.
 To be filled.
 
 
-## []()
+## [Leveraging Slot Descriptions for Zero-Shot Cross-Domain Dialogue State Tracking](https://aclanthology.org/2021.naacl-main.448.pdf)
 
 ### Task
 
-To be filled.
+Zero shot learning of slot filling for dialogue state tracking.
 
 ### Data
 
-To be filled.
+MultiWOZ.
 
 ### Approach
 
-To be filled.
+Uses self-attention based encoder of context and new slot description.
 
 ### Evaluation
 
-To be filled.
+Joint goal accuracy, slot filling accuracy.
 
 
-## []()
+## [Hierarchical Transformer for Task Oriented Dialog Systems](https://aclanthology.org/2021.naacl-main.449.pdf)
 
 ### Task
 
-To be filled.
+Task-oriented dialogue.
 
 ### Data
 
-To be filled.
+MultiWOZ.
 
 ### Approach
 
-To be filled.
+Hierarchical transformer.
 
 ### Evaluation
 
-To be filled.
-
-
-## []()
-
-### Task
-
-To be filled.
-
-### Data
-
-To be filled.
-
-### Approach
-
-To be filled.
-
-### Evaluation
-
-To be filled.
-
-
-## []()
-
-### Task
-
-To be filled.
-
-### Data
-
-To be filled.
-
-### Approach
-
-To be filled.
-
-### Evaluation
-
-To be filled.
-
-
-## []()
-
-### Task
-
-To be filled.
-
-### Data
-
-To be filled.
-
-### Approach
-
-To be filled.
-
-### Evaluation
-
-To be filled.
-
-
-## []()
-
-### Task
-
-To be filled.
-
-### Data
-
-To be filled.
-
-### Approach
-
-To be filled.
-
-### Evaluation
-
-To be filled.
+BLEU, Entity-F1, inform and success.
 
 
 
