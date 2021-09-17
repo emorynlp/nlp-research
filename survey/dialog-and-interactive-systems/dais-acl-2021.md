@@ -372,139 +372,166 @@ hits@k, ROUGE-L, METEOR, CIDEr
 
 ### Task
 
-To be filled.
+Emotional Support Conversations
 
 ### Data
 
-To be filled.
+newly created ESConv
 
 ### Approach
 
-To be filled.
+Propose a new task of Emotional Support conversations with a framework for dialog systems based on cognitive science theory of conversational support (Hill's Helping Skills theory) that is composed of 3 stages (exploration, comforting, and action) with their respective relevant conversational strategies
+
+Crowdsource dataset for this task with extensive participant training and quality control measures
+
+Finetune pretrained seq2seq models on this dataset with conversational strategy annotation as additional input
 
 ### Evaluation
 
 #### Automated
 
+perplexity, BLEU-2, ROUGE-L, BOW Embedding Similarity Extrema
+
 #### Human
+
+Interactive preference evaluation of fluency, identification, comforting, suggestion, overall quality
 
 ## [GTM: A Generative Triple-wise Model for Conversational Question Generation](https://aclanthology.org/2021.acl-long.271/)
 
 ### Task
 
-To be filled.
+Open-domain question generation
 
 ### Data
 
-To be filled.
+corpus extracted from Reddit
 
 ### Approach
 
-To be filled.
+Utilize variational latent variables to capture post-query-answer, post-query, and query-answer relationships
 
 ### Evaluation
 
 #### Automated
 
+BLEU-1/2, Distinct-1/2, Embedding Similarity-Avg/Extrema/Greedy, RubG, RubA
+
 #### Human
+
+Static numeric evaluation of fluency, coherence, willingness
 
 ## [Diversifying Dialog Generation via Adaptive Label Smoothing](https://aclanthology.org/2021.acl-long.272.pdf)
 
 ### Task
 
-To be filled.
+Open-domain response generation
 
 ### Data
 
-To be filled.
+Daily Dialog, OpenSubtitles
 
 ### Approach
 
-To be filled.
+Dynamic adjustments to the supervision signals provided to a seq2seq model at training time to reduce over-fitting/high-frequency word problem by learning to reduce reward of correctly predicted target words and increasing reward of non-target words using an auxiliary decoder
 
 ### Evaluation
 
 #### Automated
 
+Distinct-1/2, 1/2-gram Entropy, BLEU-2/3/4, Low-frequency token ratio
+
 #### Human
+
+Static preference evaluations of fluency, coherence, informativeness, and overall quality
 
 ## [Continual Learning for Task-oriented Dialogue System with Iterative Network Pruning, Expanding and Masking](https://aclanthology.org/2021.acl-short.66/)
 
 ### Task
 
-To be filled.
+Task-oriented dialogue
 
 ### Data
 
-To be filled.
+In-Car Assistant, Multi-WOZ 2.1, CamRest
 
 ### Approach
 
-To be filled.
+Framework for learning new tasks, given a model trained on previous tasks, that utilizes iterative pruning of old task weights, network expansion to create new weights, and task-specific weight masks
 
 ### Evaluation
 
 #### Automated
 
-#### Human
+BLEU, Entity F1
 
 ## [HERALD: An Annotation Efficient Method to Detect User Disengagement in Social Conversations](https://aclanthology.org/2021.acl-long.283/)
 
 ### Task
 
-To be filled.
+Open-domain dialogue user engagement detection
 
 ### Data
 
-To be filled.
+Gunrock Movie Dataset, ConvAI2, Google Meena, Facebook Blender
 
 ### Approach
 
-To be filled.
+Finetune a pretrained BERT-based classifier on data that is automatically labelled with heuristics and denoised using Shapely
 
 ### Evaluation
 
 #### Automated
 
-#### Human
+balanced accuracy, F_2 Score
 
 ## [MPC-BERT: A Pre-Trained Language Model for Multi-Party Conversation Understanding](https://aclanthology.org/2021.acl-long.285/)
 
 ### Task
 
-To be filled.
+Multi-party conversation (MPC)
 
 ### Data
 
-To be filled.
+2 Ubuntu IRC datasets (Hu et al. 2019; Ouchi and Tsuboi 2016)
 
 ### Approach
 
-To be filled.
+New pre-training paradigm for language models of multi-party conversations by joint training on 5 self-supervised tasks in a multi-task learning setup: reply-to utterance recognition, identical speaker searching, pointer consistency distinction, masked shared utterance restoration, and shared node detection
 
 ### Evaluation
 
 #### Automated
 
-#### Human
+Use pretraining approach on BERT-based language model and then evaluate how well it performs after finetuning on each task below:
+
+Addressee Recognition: P@1, Accuracy
+
+Speaker Identification: P@1
+
+Response Selection: R_2@1, R_10@1
+
 
 ## [NeuralWOZ: Learning to Collect Task-Oriented Dialogue via Model-Based Simulation](https://aclanthology.org/2021.acl-long.287/)
 
 ### Task
 
-To be filled.
+Task-oriented dialogue collection
 
 ### Data
 
-To be filled.
+MultiWOZ 2.1
 
 ### Approach
 
-To be filled.
+Transformer-based seq2seq model to generate a synthetic dialogue between the user and the system based on provided goal instructions and API call results where each utterance is labelled with its realized slot-value pairs from a transformer-based multiple-choice selection model
 
 ### Evaluation
 
 #### Automated
+
+Zero-shot learning: Joint goal accuracy, slot accuracy
+
+Intrinsic evaluation on model: Perplexity, Joint goal accuracy
 
 #### Human
 
@@ -512,342 +539,412 @@ To be filled.
 
 ### Task
 
-To be filled.
+Persona-grounded response generation
 
 ### Data
 
-To be filled.
+Persona-Chat, ROCStories
 
 ### Approach
 
-To be filled.
+Utilize story excerpts to generate more interesting dialogue responses by performing gradient-based decoding (modify the underlying hidden state representation of each output timestep by backpropogation) such that the generated response is fluent with the context, minimally different from the retrieved story excerpt, and is maximally consistent with the persona
 
 ### Evaluation
 
 #### Automated
 
+Distint-1/2, Entropy
+
 #### Human
+
+Static preference evaluation of sensibility and engagingness
 
 ## [Neural Stylistic Response Generation with Disentangled Latent Variables](https://aclanthology.org/2021.acl-long.339/)
 
 ### Task
 
-To be filled.
+Stylistic open-domain response generation
 
 ### Data
 
-To be filled.
+Daily Dialog, Holmes monolingual stylistic dataset
 
 ### Approach
 
-To be filled.
+Generative model that uses a structured latent space with a seq2seq model for dialog history, an autoencoder model for response and stylistic sentence, and a shared decoder. The model is trained such that it learns to distinguish latent content and style information by averaging the style features of the response at decoding
 
 ### Evaluation
 
 #### Automated
 
+Style Intensity, BLEU-3/4, Distinct-1/2
+
 #### Human
+
+Static preference evaluation of content relevance and style intensity
 
 ## [RADDLE: An Evaluation Benchmark and Analysis Platform for Robust Task-oriented Dialog Systems](https://aclanthology.org/2021.acl-long.341/)
 
 ### Task
 
-To be filled.
+Task-oriented dialog benchmarking
 
 ### Data
 
-To be filled.
+Built from MultiWOZ 2.0
 
 ### Approach
 
-To be filled.
+Presents a benchmark for evaluating task-oriented dialog models along the dimensions of generalizability to low-resource new tasks, dialog state tracking, end-to-end modeling, and robustness to varied users (language variation, speech errors, unseen entities, out-of-domain utterances) 
 
 ### Evaluation
 
 #### Automated
 
+Dialog State Tacking: joint goal accuracy
+
+End-to-end modeling: Inform, Success, BLEU
+
 #### Human
 
+Top-ranked submissions to the benchmark have access to human evaluations (unspecified in this paper what those human evaluations consist of)
 
 ## [Domain-Adaptive Pretraining Methods for Dialogue Understanding](https://aclanthology.org/2021.acl-short.84/)
 
 ### Task
 
-To be filled.
+Conversational Semantic Role Labeling and Spoken Language Understanding
 
 ### Data
 
-To be filled.
+DuConv, NewsDialog, CrossWOZ
 
 ### Approach
 
-To be filled.
+Analyze the impacts of pretraining objective (MLM, Span Boundary Objective, proposed Perturbation Masking Objective) on downstream task performance
+
+Perturbation Masking Objective maximizes the correlation between predicates and arguments by rewarding large contextualized vector distances of arguments between when the predicate is masked versus not masked in the sequence
 
 ### Evaluation
 
 #### Automated
 
-#### Human
+DuConv, NewsDialog: F1_all/cross/intra
+
+CrossWOZ: F1_intent/slot/all
 
 ## [Semantic Representation for Dialogue Modeling](https://aclanthology.org/2021.acl-long.342/)
 
 ### Task
 
-To be filled.
+Open-domain response generation and dialogue relation extraction
 
 ### Data
 
-To be filled.
+DialogRE, Daily Dialog
 
 ### Approach
 
-To be filled.
+Incorporate dialogue-level AMR representations into Transformer-based models for the tasks by: 
+
+(1) encoding the AMR-relations between Transformer hidden-state token representations using a Graph-Transformer 
+
+or 
+
+(2) separately encoding AMR graph and sentence, then combine their embeddings using either feature fusion (for dialogue relation extraction) or dual attention (for dialogue response generation)
 
 ### Evaluation
 
 #### Automated
 
+relation extraction: F1
+
+response generation: BLEU-1/2/3/4, Distinct-1/2
+
 #### Human
+
+response generation: Static numeric evaluation of coherence, fluency, informativeness, and overall quality
 
 ## [A Pre-training Strategy for Zero-Resource Response Selection in Knowledge-Grounded Conversations](https://aclanthology.org/2021.acl-long.343/)
 
 ### Task
 
-To be filled.
+Knowledge-grounded response matching
 
 ### Data
 
-To be filled.
+Train: MS MARCO, Reddit 
+
+Test: WoW, CMU_DoG
 
 ### Approach
 
-To be filled.
+Pretraining paradigm of joint-learning on query-passage matching, query-dialogue history matching, and multi-turn response matching tasks in order to leverage ad-hoc retrieval datasets in addition to knowledge-grounded dialogue datasets
 
 ### Evaluation
 
 #### Automated
 
-#### Human
+R_n@k
 
 ## [SOLOIST: Building Task Bots at Scale with Transfer Learning and Machine Teaching](https://arxiv.org/abs/2005.05298)
 
 ### Task
 
-To be filled.
+Task-oriented dialog
 
 ### Data
 
-To be filled.
+CamRest676, MultiWOZ
 
 ### Approach
 
-To be filled.
+seq2seq model that takes as input a concatenated text sequence of dialog history and database query results and learns to output the response by jointly learning belief  state prediction and response generation
 
 ### Evaluation
 
 #### Automated
 
+Inform, Success, BLEU
+
 #### Human
+
+Interactive numeric evaluation of success, understanding, and appropriateness
 
 ## [Maria: A Visual Experience Powered Conversational Agent](https://aclanthology.org/2021.acl-long.435/)
 
 ### Task
 
-To be filled.
+Open-domain response generation
 
 ### Data
 
-To be filled.
+Reddit, Open Images, MS-COCO
 
 ### Approach
 
-To be filled.
+Ground response generation on visual images by retrieving a relevant image using a cross-modal matching model trained on image captioning data, extracting concept labels and features from the image using an object detection model pretrained on Visual Genome, and producing a response conditioned on the context and extracted visual information using a transformer encoder-decoder architecture.
 
 ### Evaluation
 
 #### Automated
 
+perplexity, BLEU-1, ROUGE-L, Embedding Similarity-Avg/Extrema/Greedy, Distinct-1/2
+
 #### Human
+
+Static numeric evaluation of fluency, relevance, and richness
 
 ## [A Human-machine Collaborative Framework for Evaluating Malevolence in Dialogues](https://aclanthology.org/2021.acl-long.436/)
 
 ### Task
 
-To be filled.
+Dialogue evaluation - improve efficiency without sacrificing reliability
 
 ### Data
 
-To be filled.
+MDRDC
 
 ### Approach
 
-To be filled.
+Designed a sample assignment execution module that assigns a dialogue to either the automatic or human evaluation sets using integer linear programming over the model confidence estimation (MCE) module output and the human effort estimation (HEE) module output. The model confidence estimation module utilizes a BERT-based maximum class probability, trust score, and true class probability. The human effort estimation module estimates annotation time using random forest regression based on dialogue and worker features.
 
 ### Evaluation
 
 #### Automated
 
-#### Human
+Overall: precision, recall, F1-score, accuracy, human-ratio, time cost, 
+
+MCE: AUC, top-k accuracy
+
+HEE: MSE, RMSE, MAE, R^2
 
 ## [Generating Relevant and Coherent Dialogue Responses using Self-Separated Conditional Variational AutoEncoders](https://aclanthology.org/2021.acl-long.437/)
 
 ### Task
 
-To be filled.
+Open-domain response generation
 
 ### Data
 
-To be filled.
+Daily Dialog, OpenSubtitles
 
 ### Approach
 
-To be filled.
+Conditional variational auto-encoder model for response generation where dialogue contexts are partitioned into groups and inter-group similarity is decreased while intra-group similarity is increased.
 
 ### Evaluation
 
 #### Automated
 
+Perplexity, response length, distinct-1/2, BLEU-1, Embedding Similarity Avg, coherence
+
 #### Human
+
+Static numeric evaluation of diversity, relevance, fluency
 
 ## [Learning to Ask Conversational Questions by Optimizing Levenshtein Distance](https://aclanthology.org/2021.acl-long.438/)
 
 ### Task
 
-To be filled.
+Conversational Question Simplification
 
 ### Data
 
-To be filled.
+CANARD, CAsT
 
 ### Approach
 
-To be filled.
+Predict edits and phrasings needed to transform input question into conversation question using a Hierarchical Combinatorial Markov Decision Process using an Iterative Reinforce Training algorithm that is rewarded according to Levenshtein distance
 
 ### Evaluation
 
 #### Automated
 
-#### Human
+BLEU-1/2/3/4, ROUGE-L, CIDEr
 
 ## [DVD: A Diagnostic Dataset for Multi-step Reasoning in Video Grounded Dialogue](https://aclanthology.org/2021.acl-long.439/)
 
 ### Task
 
-To be filled.
+Video-grounded conversational question dataset creation
 
 ### Data
 
-To be filled.
+Built from CATER
 
 ### Approach
 
-To be filled.
+(Functional program, question template) pairs for video intervals are created and used to generate relevant questions and answers in sequential order for a video. 3 semantic relation transformations are defined and applied to the generations in order to capture conversational linguistic patterns and conversation-relevant reasoning, including temporal relations, object reference (pronouns, etc.), and topic transfer.
 
 ### Evaluation
 
+Report results of baseline models (e.g. popularity, tf-idf retrieval, RNN, RNN+CNN, transformer-based) on a retrieval multiple-choice task
+
 #### Automated
 
-#### Human
+Accuracy
 
 ## [On the Generation of Medical Dialogs for COVID-19](https://aclanthology.org/2021.acl-short.112/)
 
 ### Task
 
-To be filled.
+COVID-19 doctor dialogue system
 
 ### Data
 
-To be filled.
+newly created CovidDialog (English and Chinese versions)
 
 ### Approach
 
-To be filled.
+encoder-decoder model trained with multi-task learning of response generation and masked-token prediction to regularize the model
 
 ### Evaluation
 
 #### Automated
 
+perplexity, NIST-4, BLEU-2/4, METEOR, 4-gram Entropy, and Distinct-1/2
+
 #### Human
+
+Static numeric evaluation of correctness, relevance, informativeness, and doctor-likeness
 
 ## [Constructing Multi-Modal Dialogue Dataset by Replacing Text with Semantically Relevant Images](https://aclanthology.org/2021.acl-short.113/)
 
 ### Task
 
-To be filled.
+Text-and-image dialogue dataset creation
 
 ### Data
 
-To be filled.
+newly created dataset based on 3 dialogue datasets (Daily Dialog, EmpatheticDialogues, and Persona-Chat) and 2 image-captioning datasets (MS-COCO and Flicker 30k)
 
 ### Approach
 
-To be filled.
+Apply text-to-image replacement using pre-trained Visual Semantic Reasoning Network on dialogue utterances to substitute in a semantically-coherent image and filter out these modified dialogues if their similarity score is below a specified empirically-derived threshold from human-evaluation studies
 
 ### Evaluation
 
 #### Automated
 
+Evaluate utility of dataset in dialogue sentence prediction tasks: R@1, R@5, Mean Rank
+
 #### Human
+
+Dataset quality: numeric ratings of the swapped images along 4 dimensions (key object portrayal, meaning, context consistency)
+
+Evaluate utility of dataset in dialogue sentence prediction tasks: numeric rating of relevance
+
 
 ## [MMGCN: Multimodal Fusion via Deep Graph Convolution Network for Emotion Recognition in Conversation](https://aclanthology.org/2021.acl-long.440/)
 
 ### Task
 
-To be filled.
+Emotion classification in dialog
 
 ### Data
 
-To be filled.
+IEMOCAP, MELD
 
 ### Approach
 
-To be filled.
+For each modality (textual, acoustic, visual), encode the utterance into a context-aware representation using a BLSTM, FC, and FC network, respectively. Then, construct a graph where each node is an encoded utterance representation per modality and weighted edges exist between all nodes of the same modality and all nodes of the same utterance. A spectral domain deep GCN operates over the graph to produce a graph embedding for each node, which are then used as input to a MLP emotion classifier. 
 
 ### Evaluation
 
 #### Automated
 
-#### Human
+F1-score
 
 ## [DynaEval: Unifying Turn and Dialogue Level Evaluation](https://aclanthology.org/2021.acl-long.441/)
 
 ### Task
 
-To be filled.
+Automated dialogue evaluation
 
 ### Data
 
-To be filled.
+Empathetic Dialogue, ConvAI2 PersonaChat, Daily Dialog, FED (for dialogue evaluation task)
 
 ### Approach
 
-To be filled.
+attention-based two-stage GCN over a graph constructed with nodes as utterances and weighted edges between window-adjacent utterances paired with a fully-connected layer to output a final dialogue coherence score, trained using preference learning across positive and negative samples
 
 ### Evaluation
 
 #### Automated
 
-#### Human
+Dialogue-level discrimination task: Accuracy
+
+Dialogue evaluation task: spearman correlation between predicted score and human score
 
 ## [Unsupervised Learning of KB Queries in Task-Oriented Dialogs](https://arxiv.org/abs/2005.00123)
 
 ### Task
 
-To be filled.
+Task-oriented dialogue
 
 ### Data
 
-To be filled.
+CamRest, DSTC2
 
 ### Approach
 
-To be filled.
+Remove the need for KB query annotations in the training data by designing a model that predicts when to generate a KB query (binary classifier position predictor) and what KB query to generate (encoder-decoder query predictor) via reinforcement learning (specifically, a modified version of MAPO)
 
 ### Evaluation
 
 #### Automated
 
+KB query predictor: accuracy, total reward, PIQ ratio
+
+KB query position predictor: accuracy, turn difference
+
+Overall system: BLEU, entity F1, entity F1 KB
+
 #### Human
+
+Static numeric evaluation of informativeness, grammar
 
 ## [Pretraining the Noisy Channel Model for Task-Oriented Dialogue](https://arxiv.org/abs/2103.10518)
 
