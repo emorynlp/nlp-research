@@ -71,23 +71,28 @@ Variational Heirarchical Dialog AutoEncoder
 1. Performance on downstream task of Dialogue State Tracking: Joint goal accuracy, Turn level inform DA accuracy, request DA accuracy, etc.
 2. Diversity Evaluation (no. of Unigrams or no. of dialog acts)
 
-## [Title of Paper 4]()
+## [Automatically Learning Data Augmentation Policies for Dialogue Tasks](https://aclanthology.org/D19-1132.pdf)
 
 ### Task
 
-To be filled.
+Data Augmentation for Dialogue Response Generation
 
 ### Data
 
-To be filled.
+Ubuntu Dialoge Corpus
 
 ### Approach
 
-To be filled.
-
+Adapted AutoAugment (used in Computer Vision) for text: 
+- Algorithm searches for optimal pertubation policies via a controller trained via RL
+- Reward: comes from training the model with the sampled augmentation policy
+- Each policy contains 2 sub-policies randomly sampled during training 
+   - Each subpolicy contains 2 operations applied in sequence
+          - Operations include grammar errors, verb inflexions, word repetitions
 ### Evaluation
 
-To be filled.
+Automatic Evaluation: Entity F1, Activity F1 (overlap of technical nouns & technical verbs between the generated response and the target response)
+Human evaluation
 
 
 ## [Title of Paper 5]()
