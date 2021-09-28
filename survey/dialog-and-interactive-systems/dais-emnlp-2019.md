@@ -95,24 +95,23 @@ Automatic Evaluation: Entity F1, Activity F1 (overlap of technical nouns & techn
 Human evaluation
 
 
-## [Title of Paper 5]()
+## [Dialog Intent Induction with Deep Multi-View Clustering](https://aclanthology.org/D19-1413.pdf)
 
 ### Task
 
-To be filled.
+Discovering user intents from user query utterances in human-human conversations such as dialogs between customer support agents and customers (also taking into account the rest of the dialog)
 
 ### Data
-
-To be filled.
+1. Human human conversations of Twitter airline customer support (43k dialogs) -> 500 conversations randomly sampled annotated with 14 intents
+2. Question Intent Clustering dataset based on AskUbuntu (which was designed for question duplication detection)
 
 ### Approach
 
-To be filled.
+Alternating-view k-means (proposed in the paper) AV-KMEANS uses different neural encoders to embed the inputs corresponding to two views: the user query utterance and the rest of the conversation.
 
 ### Evaluation
 
-To be filled.
-
+Precision, recall, F1 score, and unsupervised clustering accuracy (ACC) after setting the number of clusters manually.
 
 ## [Title of Paper 6]()
 
