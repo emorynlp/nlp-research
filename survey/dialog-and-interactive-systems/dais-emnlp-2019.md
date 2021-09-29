@@ -215,3 +215,23 @@ Inform F1 : Evaluates whether all the requested information (e.g. address, phone
 Match rate : This evaluates whether the booked entities match all the indicated constraints (e.g.Japanese food in the center of the city) for all domains.
 
 
+## [DialogueGCN: A Graph Convolutional Neural Network for Emotion Recognition in Conversation](https://aclanthology.org/D19-1015.pdf)
+
+### Task
+
+Emotion recognition in conversation.
+
+### Data
+
+IEMOCAP, AVEC, MELD (multimodal datasets containing textual, visual and acoustic information for every utterance of each conversation)
+
+### Approach
+
+DialogueGCN:
+- Sequential Context Encoder (BiGRU)
+- Speaker-Level Context Encoder (Graphical Network)
+- Emotion Classifier (Concatenaion of the above 2 -> ReLU -> softmax -> argmax)
+
+### Evaluation
+
+F1, Weighted-F1
