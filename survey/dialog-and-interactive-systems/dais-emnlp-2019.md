@@ -113,98 +113,105 @@ Alternating-view k-means (proposed in the paper) AV-KMEANS uses different neural
 
 Precision, recall, F1 score, and unsupervised clustering accuracy (ACC) after setting the number of clusters manually.
 
-## [Title of Paper 6]()
+## [A Practical Dialogue-Act-Driven Conversation Model for Multi-Turn Response Selection](https://aclanthology.org/D19-1205.pdf)
 
 ### Task
 
-To be filled.
+End-to-end multi-task model for conversation modeling, optimized for 1) dialogue act prediction and 2)response selection
 
 ### Data
 
-To be filled.
+DailyDialog and SwitchBoard Dialogue Act Corpus
 
 ### Approach
 
-To be filled.
+Use the previous utterances (context) and the predicted dialogue acts of both the context and the response to select a response from a given set of candidate responses.
 
 ### Evaluation
 
-To be filled.
+1) Dialogue Act Accuracy 2) MRR response selection
 
-
-## [Title of Paper 7]()
+## [A Semi-Supervised Stable Variational Network for Promoting Replier-Consistency in Dialogue Generation](https://aclanthology.org/D19-1200.pdf)
 
 ### Task
 
-To be filled.
+Dialogue Generation
 
 ### Data
 
-To be filled.
+Cornell Movie Dialogs Corpus,Ubuntu Dialogue Corpus
 
 ### Approach
 
-To be filled.
+1) a semi-supervised stable variational network -> to promote replier consistency
+2) unsupervised personal feature extractor -> to acquire replier specific information
 
 ### Evaluation
 
-To be filled.
+Automatic: The Distinct n-grams and its ratio over all generated responses.
+Manual: How much of the response is not only semantically related and informative, but also consistent with the individual features of the replier.
 
-
-## [Title of Paper 8]()
+## [Adaptive Parameterization for Neural Dialogue Generation](https://aclanthology.org/D19-1188.pdf)
 
 ### Task
 
-To be filled.
+Dialogue Response Generation
 
 ### Data
 
-To be filled.
+Ubuntu+Reddit+a-chit-chat-dataset -> 87,468 context-response pairs
 
 ### Approach
 
-To be filled.
+Conversation-specific parameterization: For each conversation, the model generates parameters of the encoder-decoder by referring to the input context:
+- context-aware
+- topic-aware
 
 ### Evaluation
 
-To be filled.
+Semantic Relevance between ground truth and generation: BLEU, embedding average, embedding extrema, embedding greedy
+Informativeness and Diversity: Distinct-1,2,3 grams
+Human Evaluation: measure context relevance, logical consistency, fluency and informativeness
 
-
-## [Title of Paper 9]()
+## [Build it Break it Fix it for Dialogue Safety: Robustness from Adversarial Human Attack](https://aclanthology.org/D19-1461.pdf)
 
 ### Task
 
-To be filled.
+Improve robustness of dialoge models against Offensive Langauage
 
 ### Data
 
-To be filled.
+Wiki Toxic Comments (WTC) dataset
+Workers are shown truncated pieces of a conversation from the ConvAI2 chit-chat task, 
+-> asked to continue the conversation with OFFENSIVE responses that our classifier marks as SAFE
+-> 3000 examples
 
 ### Approach
 
-To be filled.
+Train a BERT based offensive message detection, ask crowdsourced-workers to break it, use those examples to retrain the model
 
 ### Evaluation
 
-To be filled.
+F1, Weighted-F1
 
-
-## [Title of Paper 10]()
+## [Guided Dialog Policy Learning: Reward Estimation for Multi-Domain Task-Oriented Dialog](https://arxiv.org/pdf/1908.10719.pdf)
 
 ### Task
 
-To be filled.
+To estimate the reward signal and infer the user goal in the dialog sessions.
 
 ### Data
 
-To be filled.
+MultiWOZ
 
 ### Approach
 
-To be filled.
+A novel algorithm based on Adversarial Inverse Reinforcement Learning for joint reward estimation and policy optimization in multi-domain task-oriented dialog.
+The reward estimator evaluates state-action pairs so that it can guide the dialog policy at each dialog turn.
 
 ### Evaluation
 
-To be filled.
+Inform F1 : Evaluates whether all the requested information (e.g. address, phone number of a hotel) has been informed.
+Match rate : This evaluates whether the booked entities match all the indicated constraints (e.g.Japanese food in the center of the city) for all domains.
 
 
