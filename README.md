@@ -10,5 +10,4 @@ This site provides guidelines to those who want to advance their research in Nat
 
 ## Literature Survey
 
-* [Dialog and Interactive Systems](survey/dialog-and-interactive-systems/) (09/2021)
-* [Blender](survey/blender.md) (10/2021)
+* [2022](survey/2022.md)
