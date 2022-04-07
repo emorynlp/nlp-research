@@ -21,7 +21,7 @@ Use the following template to include figures in column:
 \centering
 \includegraphics[width=\columnwidth]{img/image.pdf}
 \caption{Description.}
-\label{img:name}
+\label{fig:name}
 \end{figure}
 ```
 
@@ -46,7 +46,7 @@ Use the following template to include tables that expand to the full page.
 \centering
 \includegraphics[width=\textwidth]{img/image.pdf}
 \caption{Description.}
-\label{img:name}
+\label{fig:name}
 \end{figure*}
 
 ```
