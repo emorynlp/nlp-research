@@ -8,12 +8,14 @@ Use the following template to include tables in column:
 \begin{table}[htbp!]
 \centering\small{ %\resizebox{\columnwidth}{!}{
 \begin{tabular}{c||c|c|c} 
+\toprule
 \bf A & \bf B & \bf C & \bf D \\
-\hline\hline
+\midrule
 0 & A0 & B0 & C0 \\
 1 & A1 & B1 & C1 \\
 2 & A2 & B2 & C2 \\
 3 & A3 & B3 & C3 \\
+\bottomrule
 \end{tabular}}
 \caption{Description of this table.}
 \label{tab:name}
@@ -54,12 +56,14 @@ Use the following template to include tables that expand to the full page.
 \begin{table*}[htbp!]
 \centering\small{ %\resizebox{\textwidth}{!}{
 \begin{tabular}{c||c|c|c} 
+\toprule
 \bf A & \bf B & \bf C & \bf D \\
-\hline\hline
+\midrule
 0 & A0 & B0 & C0 \\
 1 & A1 & B1 & C1 \\
 2 & A2 & B2 & C2 \\
 3 & A3 & B3 & C3 \\
+\bottomrule
 \end{tabular}}
 \caption{Description of this table.}
 \label{tab:name}
@@ -81,12 +85,14 @@ Use the following template to create sub-tables.
 \begin{subtable}{\columnwidth}
 \centering\small{ %\resizebox{\columnwidth}{!}{
 \begin{tabular}{c||c|c|c} 
+\toprule
 \bf A & \bf B & \bf C & \bf D \\
-\hline\hline
+\midrule
 0 & A0 & B0 & C0 \\
 1 & A1 & B1 & C1 \\
 2 & A2 & B2 & C2 \\
 3 & A3 & B3 & C3 \\
+\bottomrule
 \end{tabular}}
 \caption{Sub-table 1.}
 \label{tab:name-1}
@@ -96,12 +102,14 @@ Use the following template to create sub-tables.
 \begin{subtable}{\columnwidth}
 \centering\small{ %\resizebox{\columnwidth}{!}{
 \begin{tabular}{c||c|c|c} 
+\toprule
 \bf A & \bf B & \bf C & \bf D \\
-\hline\hline
+\midrule
 0 & A0 & B0 & C0 \\
 1 & A1 & B1 & C1 \\
 2 & A2 & B2 & C2 \\
 3 & A3 & B3 & C3 \\
+\bottomrule
 \end{tabular}}
 \caption{Sub-table 2.}
 \label{tab:name-2}

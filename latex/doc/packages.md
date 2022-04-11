@@ -28,6 +28,7 @@ Include the following packages (and definition) to the main tex file:
 \usepackage[T1]{fontenc}    % fix font related glitches such as "|"
 \usepackage{multirow}       % merge rows in tables
 \usepackage{subcaption}     % create sub-tables and sub-figures
+\usepackage{booktabs}       % borders in tabular
 \usepackage{amssymb}        % enable \mathbb, \mathcal
 \usepackage{bold-extra}     % enable \texttt{\textbf{}}
 \usepackage{bm}             % enable bold font in math mode
